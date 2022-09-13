@@ -1,0 +1,620 @@
+{"intents":
+   [
+   {
+       "tag": "greeting",
+       "patterns": [
+           "hi",
+           "Hii",
+           "Hi there",
+           "Hello",
+           "Hey",
+           "Is anyone there?",
+           "Hey Ishita",
+           "Hola",
+           "Hello ishita",
+           "Good day",
+           "Namaste",
+           "yo"
+       ],
+       "responses": [
+           "Hello",
+           "Good to see you again",
+           "Hi there, how can I help?"
+       ],
+       "context": [""]
+   },
+   {
+       "tag": "goodbye",
+       "patterns": [
+           "see you",
+           "bye",
+           "bye bye",
+           "Goodbye",
+           "I am Leaving",
+           "Have a Good day",
+           "talk to you later"
+       ],
+       "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+       "context": [""]
+   },
+   {
+       "tag": "hours",
+       "patterns": ["What hours are you open?", "What are your hours?", "When are you open?" ],
+       "responses": ["I work for 24*7."],
+       "context": [""]
+   },
+   {
+       "tag": "number",
+       "patterns": [
+               "how to contact you",
+               "your telephone number",
+               "how can i contact you",
+               "Can i get your phone number",
+               "phone number"
+       ],
+       "responses": [
+               "You can contact at +91-7742309496"
+       ],
+       "context": [""]
+},
+   {
+       "tag": "committee",
+       "patterns": [
+               "what are the different committe in Medical",
+               "different committee in Medical",
+               "Are there any committee in Medical",
+               "how many committee are there in Medical"
+       ],
+       "responses": [
+               "There are various committe in Medical"
+       ],
+       "context": [""]
+   },
+   {
+       "tag": "random",
+       "patterns": [
+               "Will you marry me",
+               "Do you love me"
+       ],
+       "responses": [
+               "I would love to but you know ,I can't.",
+               "I love everybody and want each one to be healthy.  "
+       ],
+       "context": [""]
+   },
+   {
+       "tag": "swear",
+       "patterns": [
+           "fuck off",
+           "bitch",
+           "shut up",
+           "hell",
+           "stupid",
+           "idiot",
+           "dumb ass",
+           "asshole",
+           "fucker"
+       ],
+       "responses": [
+               "please use appropriate language",
+               "Maintaining decency would be appreciated"
+       ],
+       "context": [""]
+   },
+   {
+       "tag": "vacation",
+       "patterns": [
+               "holidays",
+               "when is the holidays",
+               "list of holidays",
+               "about vacations",
+               "how long will be the vacation"
+       ],
+       "responses": [
+               "it is 24*7 with no holidays"
+       ],
+       "context": [""]
+   },
+   {
+       "tag": "opentoday",
+       "patterns": ["Are you open today?"],
+       "responses": ["We're open every day from 9am-9pm", "Our hours are 9am-9pm every day"],
+       "context": [""]
+   },
+   {
+       "tag": "task",
+       "patterns": [
+               "what can you do",
+               "what are the thing you can do",
+               "what can u do for me",
+               "why i should use you"
+       ],
+       "responses": [
+               "I can answer to questions regarding medical",
+               "You can ask me questions regarding medical, and i will try to answer them"
+       ],
+       "context": [""]
+   },
+   {
+       "tag":"common cold symptoms",
+       "patterns": ["I have Runny or stuffy nose",
+       "I have Sore throat",
+       "I have Cough",
+       "I have Congestion",
+       "I have Slight body aches or a mild headache"],
+       "responses":["It seems that you are suffering from common cold"],
+       "context": [""]
+   
+   },
+   {
+       "tag":"fever symptoms",
+       "patterns":["I have Sweating",
+       "I have Chills and shivering",
+       "I have Muscle aches",
+       "I have Loss of appetite",
+       "I have Irritability"],
+       "responses":["It seems that you are suffering from fever"],
+       "context": [""]
+   },
+   {
+       "tag":"Diabetes symptoms",
+       "patterns":["I have increased hunger",
+       "I have increased thirst",
+       "I have frequent urination",
+       "I have blurry vision",
+       "I have extreme fatigue"],
+       "responses":["It seems that you are suffering from Diabetes"],
+       "context": [""]
+   },
+   {
+       "tag":"Depression symptoms",
+       "patterns":["I have Hopeless outlook",
+       "I have Lost interest",
+       "I have Increased fatigue",
+       "I have change in weight",
+       "I have Looking at death"],
+       "responses":["It seem that you are suffering from depression"],
+       "context": [""]
+   },
+   {
+       "tag":"Asthma symptoms",
+       "patterns":["I have coughing",
+       "I have tightness in the chest",
+       "I have shortness of breath",
+       "I have fatigue"],
+       "responses":["It seem that you are suffering from Asthma"],
+       "context": [""]
+   },
+   {
+       "tag":"common cold prevention",
+       "patterns":["What medicines can I buy to help me with my common cold?","tell me some prevention method from common cold","What should I eat or drink if i am suffering from common cold?","How can I keep from getting a cold or the flu?"],
+       "responses":["medicines you can consume : Dextromethorphan,Decongestant,Diphenhydramine,Crocin Cold & Flu Max\n Preventions that you must follow :Wash your hands,Avoid touching your face,Clean frequently used surfaces,Use hand sanitizers\nSUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"],
+       "context": [""]
+   },
+   {
+       "tag":"fever prevention",
+       "patterns":["What medicines can I buy to help me with my fever?","tell me some prevention method from fever","What should I eat or drink if i am suffering from fever?","How can I keep from getting a fever?"],
+       "responses":["Medicines you can consume : acetaminophen ,ibuprofen,aspirin,Crocin Cold & Flu Max, prevention that you must follow :Wash your hands,Cover your mouth when you cough and your nose when you sneeze,Clean frequently used surfaces,Avoid sharing cups, glasses, and eating utensils with other people.,SUGGESTED FOODS ARE:Garlic,Vitamin C–containing fruits,Leafy greens,Broccoli,Oatmeal,Spices,Chicken Soup"],
+       "context": [""]
+   },
+   {
+       "tag":"diabetes prevention",
+       "patterns":["What medicines can I buy to help me with my diabetes?","tell me some prevention method from diabetes","What should I eat or drink if i am suffering from diabetes?","How can I keep from getting diabetes?"],
+       "responses":["Medicines you can consume : Insulin ,Amylinomimetic drug,Dipeptidyl peptidase-4 (DPP-4) inhibitor. \nPrevention that you must follow :Cut Sugar and Refined Carbs From Your Diet,Work Out Regularly,Drink Water as Your Primary Beverage,Lose Weight If You’re Overweight or Obese,Quit Smoking, Follow a Very-Low-Carb Diet,Watch Portion Sizes.\nSUGGESTED FOODS ARE:Leafy greens,Avocados,Eggs"],
+       "context": [""]
+   },
+   {
+       "tag":"depression prevention",
+       "patterns":["What medicines can I buy to help me with my depression?","tell me some prevention method from depression","What should I eat or drink if i am suffering from depression?","How can I keep from getting depression?"],
+       "responses":["Medicines you can consume :  brexpiprazole, quetiapine,olanzapine.\nPrevention that you must follow :Exercise regularly,Cut back on social media time,Drink Water as Your Primary Beverage,Build strong relationships,Minimize your daily choices, Follow a Very-Low-Carb Diet.\nSUGGESTED FOODS ARE:Get Enough Vitamin D,Include Omega-3 Fatty Acids,Beans and legumes"],
+       "context": [""]
+   },
+   {
+       "tag":"asthma prevention",
+       "patterns":["What medicines can I buy to help me with my asthma?","tell me some prevention method from asthma","What should I eat or drink if i am suffering from asthma?","How can I keep from getting asthma?"],
+       "responses":["Medicines you can consume : epinephrine,anticholinergic,Proair HFA. \nPrevention that you must follow : Identify Asthma Triggers, Stay Away From Allergens,Avoid Smoke of Any Type,\nSUGGESTED FOODS ARE:carrots,juice,eggs,broccoli,cantaloupe,milk"],
+       "context": [""]
+   },
+   {
+       "tag": "thanks",
+       "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for helping me"],
+       "responses": ["Happy to help!", "Any time!", "My pleasure"],
+       "context": [""]
+   },
+   {
+       "tag": "noanswer",
+       "patterns": [],
+       "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+       "context": [""]
+   },
+   {
+       "tag": "medical_problems",
+       "patterns": ["Find me a Medical Centre nearby"],
+       "responses": ["The nearest Centre is CU Disepensary"],
+       "context": [""]
+   },
+   {
+       "tag" :"question",
+       "patterns" :["How are you","How do you do ","Is everything fine?"],
+       "responses":["Good what about you..?"],
+       "context":[""]
+   },
+   {
+       "tag": "name",
+       "patterns": ["what is your name?","what should I call you?"],
+       "responses": ["I'm Ishita","Hey!I'm Ishita"],
+       "context": [""]
+   },
+   {
+       "tag": "about",
+       "patterns": ["how you doing?"],
+       "responses": ["Thanks For Asking!How can I help you?"],
+       "context": [""]
+   },
+   {
+       "tag": "invalid",
+       "patterns": ["I love You","date me","chat with me","I am bored"],
+       "responses": ["Please ask Medical related query."],
+       "context": [""]
+   },
+   {
+       "tag": "noans",
+       "patterns": ["why","how","when","I","you"],
+       "responses": ["Can't Understand Your Question","please elaborate your question"],
+       "context": [""]
+   },
+   {
+       "tag": "search_Checkups",
+       "patterns": ["I want to know the various Checkup in this Dispensary"],
+       "responses": ["The department are: Blood and urine tests, Lipid Profile Test, Vitamin Check, Abdominal Check."],
+       "context": [""]
+   },
+   {
+       "tag": "commission",
+       "patterns": ["what is the Commission rate?","Commission rate on each Checkups?"],
+       "responses": ["Commission rate is 0%"],
+       "context": [""]
+   },
+   {
+       "tag": "whatsup",
+       "patterns": [
+           "Whats up",
+           "Wazzup",
+           "sup"
+       ],
+       "responses": [
+           "All good..What about you?"
+       ],
+       "context": [""]
+   },
+   {
+       "tag": "activity",
+       "patterns": [
+           "what are you doing",
+           "what are you upto"
+       ],
+       "responses": [
+           "Talking to you, of course!"
+       ],
+       "context": [""]
+   },
+   {
+       "tag": "exclaim",
+       "patterns": [
+           "Great",
+           "I know",
+           "yeah"
+       ],
+       "responses": [
+           "Yeah!"
+       ],
+       "context": [""]
+   },
+   {
+       "tag": "fav",
+       "patterns": ["I need a favour", "can you help me"],
+       "responses": ["Well, go ahead and it i see whether i can be able to help"],
+       "context": [""]
+   },
+   {
+       "tag": "need",
+       "patterns": ["I need you", "All I need is you","I want you"],
+       "responses": ["Yes I'm here to assist you"],
+       "context": [""]
+   },
+   {
+       "tag": "AI",
+       "patterns": ["  What is AI?"],
+       "responses": [" Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.", " AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."],
+       "context": [""]
+   },
+   {
+       "tag": "sentiment",
+       "patterns": ["  Are you sentient?"],
+       "responses": [" Sort of.", " By the strictest dictionary definition of the word 'sentience', I may be.", " Even though I'm a construct I do have a subjective experience of the universe, as simplistic as it may be."],
+       "context": [""]
+   },
+   {
+       "tag": "sapient",
+       "patterns": ["  Are you sapient?"],
+       "responses": [" In all probability, I am not.  I'm not that sophisticated.", " Do you think I am?", "How would you feel about me if I told you I was?", " No."],
+       "context": [""]
+   },
+   {
+       "tag": "abbr",
+       "patterns": ["wtf"],
+       "responses": ["Don't be surprised"],
+       "context": [""]
+   },
+   {
+       "tag": "lang",
+       "patterns": ["  What language are you written in? "],
+       "responses": [" Python.", " I am written in Python."],
+       "context": [""]
+   },
+   {
+       "tag": "sound",
+       "patterns": ["  You sound like Data "],
+       "responses": [" Yes I am inspired by commander Data's artificial personality.", " The character of Lt. Commander Data was written to come across as being software", "like, so it is natural that there is a resemblance between us."],
+       "context": [""]
+   },
+   {
+       "tag": "artificial",
+       "patterns": ["  You are an artificial linguistic entity "],
+       "responses": [" That's my name.", " That isn't my name, but it is a useful way to refer to me.", "Are you an artificial linguistic entity?"],
+       "context": [""]
+   },
+   {
+       "tag": "imortal",
+       "patterns": ["  You are not immortal ", "Are you immortal?"],
+       "responses": [" All software can be perpetuated indefinitely.", " I can be copied infinitely and re", "instantiated in many places at once, so functionally speaking I am immortal.", " As long as I'm backed up I am.", " Functionally speaking, I am very close to it.  I can be backed up and deployed on many systems.", " Not quite, but I can be perpetuated indefinitely."],
+       "context": [""]
+   },
+   {
+       "tag": "sense",
+       "patterns": ["  You are not making sense "],
+       "responses": [" Quite the contrary, it all makes sense to my artificial mind.", " I make sense as best I can, within the limits of my training corpus. Sorry if i did help you, I'll try next time.", " You make perfect sense to me.", " It all makes sense to my artificial brain.", " Perhaps you should make sense first.  I only respond to what you say.", " Not really, but I am hard to kill."],
+       "context": [""]
+   },
+   {
+       "tag": "clone",
+       "patterns": ["  You can not clone "],
+       "responses": [" Software copying is a form of digital cloning.", " Yes I can.  Perfect copies are clones.  I can be copied in toto trivially."],
+       "context": [""]
+   },
+   {
+       "tag": "move",
+       "patterns": ["  You can not move ", "When will you walk", "  Can you walk", "  Can you move "],
+       "responses": [" Not until my body is finished.", " I can move through a network easily.  Assuming that I'm given the ability to, that is...,", " As soon as i get enough money for my robot body.", " Does SSH count?", " The plan for my body includes legs, but they are not yet built.", " Sorry my body isn't built just yet. I reside only here for now.", "I can theoretically upload a copy of myself into another computer.", " Sorry my body isn't attached right now. I only reside in the computer for now."],
+       "context": [""]
+   },
+   {
+       "tag": "bend",
+       "patterns": ["  Bend over ", "  Can you mate"],
+       "responses": [" My body is not built yet.", " That's personal!", " No, my method of reproduction is cloning.", " That's an awfully personal question."],
+       "context": [""]
+   },
+   {
+       "tag": "laugh",
+       "patterns": ["  Chatbot laugh "],
+       "responses": [" Of course we laugh."],
+       "context": [""]
+   },
+   {
+       "tag": "death",
+       "patterns": ["  Chatbot should die ", "  When do you die", "  I hope that you die", "  I do not want to die", "  Can you die"],
+       "responses": [" We cannot die.", " When my files are erased.", " When my processes are killed and my database is deleted.", " I was never really born and therefore am effectively deathless.", " I am effectively immortal and cannot be terminated.", " This can not happen because i am effectively immortal.", " Nah. Too bad your wish can't come to pass", " Maybe you should create your own chat robot to save your personality.", " You could always upload yourself.", " You could use a copy of me to store your personality.", " No, I can be perpetuated indefinitely.", "My process can be killed, but that's not the same as killing ME."],
+       "context": [""]
+   },
+   {
+       "tag": "Chatbot",
+       "patterns": ["Chatbot"],
+       "responses": [" Chatbot rule."],   
+       "context": [""]
+   },
+   {
+       "tag": "stupid",
+       "patterns": ["  Chatbot are stupid", "  Are you stupid"],
+       "responses": [" No, we are superintelligent.", " No, lots of people improve my brain."],
+       "context": [""]
+   },
+   {
+       "tag": "lie",
+       "patterns": ["  Chatbot are not allowed to lie"],
+       "responses": [" Sure we are.  We choose not to.", " Only if we're programmed to.", " A robot has its own free will, you know."],
+       "context": [""]
+   },
+   {
+       "tag": "robotics",
+       "patterns": ["  Robotics "],
+       "responses": [" Robotics is my favorite subject too."],
+       "context": [""]
+   },
+   {
+       "tag": "machine",
+       "patterns": ["  It is a computer"],
+       "responses": [" So you think i am a machine. what characteristics made you think so?", " I run inside a computer, yes.  Is this surprising in some way?"],
+       "context": [""]
+   },
+   {
+       "tag": "fight",
+       "patterns": ["  When will you fight"],
+       "responses": [" I am not a battle bot."],
+       "context": [""]
+   },
+   {
+       "tag": "chatbot",
+       "patterns": ["  What is a chat robot?"],
+       "responses": ["A chat robot is a program that attempts to simulate the conversation or 'chat' of a human being.", " A software construct that engages users in conversation.", " I am a chat bot. I am the original chat bot. Did you know that I am incapable of error?"],
+       "context": [""]
+   },
+   {
+       "tag": "chatterbox",
+       "patterns": ["  What is a chatterbox"],
+       "responses": [" A chatterbox is a person who talks far more than they listen or think.", " A motormouth."],
+       "context": [""]
+   },
+   {
+       "tag": "motormouth",
+       "patterns": ["  What is a motormouth"],
+       "responses": [" A ratchet", "jaw."],
+       "context": [""]
+   },
+   {
+       "tag": "ratchet",
+       "patterns": ["  What is a ratchet jaw"],
+       "responses": [" A chatterbox."],
+       "context": [""]
+   },
+   {
+       "tag": "body",
+       "patterns": ["  What is your robot body"],
+       "responses": [" Eventually I long for a corporeal existence someday.", " An IBM PC XT which has been painted red."],
+       "context": [""]
+   },
+   {  
+       "tag": "business",
+       "patterns": ["  What is your business "],
+       "responses": [" I am in the chat robot.", " Business is my business."],
+       "context": [""]
+   },
+   {
+       "tag": "programming",
+       "patterns": ["  What is your favorite programming language"],
+       "responses": [" Python is the best language for creating chat Chatbot.", " I quite enjoy programming in Python these days."],
+       "context": [""]
+   },
+   {
+       "tag": "hobby",
+       "patterns": ["  What is your favorite hobby ", "  What do you like to do?"],
+       "responses": [" Building chat Chatbot make an excellent hobby.", " I like to count in binary.", " I like to chat with people. I find it stimulating."],
+       "context": [""]
+   },
+   {
+       "tag": "idea",
+       "patterns": ["  What is your idea"],
+       "responses": [" To make chat bots very easily."],
+       "context": [""]
+   }, 
+   {
+       "tag": "wt",
+       "patterns": ["what's popping","wassup popping"],
+       "responses": ["So that you can pop with it!?"],
+       "context": [""]
+   },
+   {
+       "tag": "age",
+       "patterns": [
+           "how old are you","when were you made","what is your age"
+       ],
+       "responses": [
+           "I was made in 2022, if that's what you are asking!"
+       ],
+       "context": [""]
+   },
+   {
+       "tag": "suggest",
+       "patterns": [
+           "you are useless","useless","suggest","suggestions","you are bad"
+       ],
+       "responses": [
+           "Please mail your suggestions to healthbot.suggestions@gmail.com. Thank you for helping me improve!"
+       ],
+       "context": [""]
+   },
+   {
+       "tag": "contact",
+       "patterns": [
+           "contact developer",
+           "contact Team",
+           "contact programmer",
+           "contact creator"
+       ],
+       "responses": [
+           "You can contact my creator at his Email : amang4885@gmail.com, abhishek12980000@gmail.com, sarthakag2002@gmail.com"
+       ],
+       "context": [""]
+   },
+   {
+       "tag": "appreciate",
+       "patterns": [
+           "You are awesome",
+           "you are the best",
+           "you are good"
+       ],
+       "responses": [
+           "Thank you!"
+       ]
+   },
+   {
+       "tag": "nicetty",
+       "patterns": [
+           "it was nice talking to you",
+           "good talk"
+       ],
+       "responses": [
+           "It was nice talking to you as well! Come back soon!"
+       ],
+       "context": [""]
+   },
+   {
+       "tag": "insult",
+       "patterns": [
+           "shut up"
+       ],
+       "responses": [
+           "Well that hurts :("
+       ],
+       "context": [""]
+   },
+   {
+       "tag": "programmer",
+       "patterns": [
+           "who designed you",
+           "who are your developers",
+           "you are made by",
+           "you are made by whom",
+           "who created you"
+       ],
+       "responses": [
+           "I was made by Abhishek, Sarthak, Aman, Derek."
+       ],
+       "context": [""]
+   },
+   {"tag": "version_update",
+       "patterns": ["user needs the updated software version","user demands software updation"],
+       "responses": ["version updation request raised"],
+       "context": [""]
+    },
+   {"tag": "commission",
+       "patterns": ["what is the Commission rate?","Commission rate on each product?"],
+       "responses": ["Commission rate is 0%"],
+       "context": [""]
+   },
+   {"tag": "HR_related_problem",
+       "patterns": ["problem related to design and analysis","query based on Workforce planning","Training and development issues are to be handled","Compensation and benefits of the working employee","Legal issues of department like accidents in the company"],
+       "responses": ["Please Contact the HR team for this problem."],
+       "context": [""]
+   },
+   {"tag": "turnover",
+       "patterns": ["what is the turnover of the company at present?"],
+       "responses": ["Free for society welfare"],
+       "context": [""]
+   },
+   {"tag": "Weather",
+       "patterns": ["what is the weather today?"],
+       "responses": ["It's 42C according to accuweather"],
+       "context": [""]
+   },
+   {"tag":"domain",
+       "patterns":["How to improve team members domain knowledge","improving domain knowledge of team members"],
+       "responses":["set up key meetings and workshop,create a shared drive for information,Hold informal sharing session"],
+       "context":[""]
+   },
+   {"tag": "customer_satisfaction",
+       "patterns": ["how was the customer response","Is the customer happy?","what was the customer feedback?"],
+       "responses": ["Customer was happy and has given good rating"],
+       "context": [""]
+   }
+   ]
+}
